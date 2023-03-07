@@ -1,0 +1,75 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Question_5(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(515, 337)
+        self.btn_q5_save = QtWidgets.QPushButton(Form)
+        self.btn_q5_save.setGeometry(QtCore.QRect(150, 270, 211, 51))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.btn_q5_save.setFont(font)
+        self.btn_q5_save.setObjectName("btn_q5_save")
+        self.num_peace_1 = QtWidgets.QLineEdit(Form)
+        self.num_peace_1.setGeometry(QtCore.QRect(180, 60, 61, 41))
+        self.num_peace_1.setObjectName("num_peace_1")
+        self.num_peace_2 = QtWidgets.QLineEdit(Form)
+        self.num_peace_2.setGeometry(QtCore.QRect(180, 130, 61, 41))
+        self.num_peace_2.setObjectName("num_peace_2")
+        self.num_peace_3 = QtWidgets.QLineEdit(Form)
+        self.num_peace_3.setGeometry(QtCore.QRect(180, 200, 61, 41))
+        self.num_peace_3.setObjectName("num_peace_3")
+        self.label_peace = QtWidgets.QLabel(Form)
+        self.label_peace.setGeometry(QtCore.QRect(40, 0, 131, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_peace.setFont(font)
+        self.label_peace.setObjectName("label_peace")
+        self.label_war = QtWidgets.QLabel(Form)
+        self.label_war.setGeometry(QtCore.QRect(320, 0, 131, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_war.setFont(font)
+        self.label_war.setObjectName("label_war")
+        self.lable_peace_1 = QtWidgets.QLabel(Form)
+        self.lable_peace_1.setGeometry(QtCore.QRect(10, 60, 171, 51))
+        self.lable_peace_1.setObjectName("lable_peace_1")
+        self.lable_peace_2 = QtWidgets.QLabel(Form)
+        self.lable_peace_2.setGeometry(QtCore.QRect(10, 130, 141, 51))
+        self.lable_peace_2.setObjectName("lable_peace_2")
+        self.lable_peace_3 = QtWidgets.QLabel(Form)
+        self.lable_peace_3.setGeometry(QtCore.QRect(10, 200, 141, 41))
+        self.lable_peace_3.setObjectName("lable_peace_3")
+        self.label_war_1 = QtWidgets.QLabel(Form)
+        self.label_war_1.setGeometry(QtCore.QRect(290, 60, 121, 41))
+        self.label_war_1.setObjectName("label_war_1")
+        self.label_war_2 = QtWidgets.QLabel(Form)
+        self.label_war_2.setGeometry(QtCore.QRect(290, 130, 121, 51))
+        self.label_war_2.setObjectName("label_war_2")
+        self.num_war_sucssese = QtWidgets.QLineEdit(Form)
+        self.num_war_sucssese.setGeometry(QtCore.QRect(440, 60, 61, 41))
+        self.num_war_sucssese.setObjectName("num_war_sucssese")
+        self.num_war_unsucssese = QtWidgets.QLineEdit(Form)
+        self.num_war_unsucssese.setGeometry(QtCore.QRect(440, 140, 61, 41))
+        self.num_war_unsucssese.setObjectName("num_war_unsucssese")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Ответ на 5й вопрос"))
+        self.btn_q5_save.setText(_translate("Form", "Сохранить"))
+        self.label_peace.setText(_translate("Form", "В мирное время"))
+        self.label_war.setText(_translate("Form", "В военное время"))
+        self.lable_peace_1.setText(_translate("Form",
+                                              "<html><head/><body><p>Количество поощрений от</p><p><span style=\" text-decoration: underline;\">непосредственного</span> начальника</p></body></html>"))
+        self.lable_peace_2.setText(_translate("Form",
+                                              "<html><head/><body><p>Количество поощрений от</p><p><span style=\" text-decoration: underline;\">прямого</span>  начальника</p></body></html>"))
+        self.lable_peace_3.setText(_translate("Form",
+                                              "<html><head/><body><p>Количество поощрений от</p><p><span style=\" text-decoration: underline;\">вышестоящего</span> начальника</p></body></html>"))
+        self.label_war_1.setText(_translate("Form",
+                                            "<html><head/><body><p>Количество <span style=\" text-decoration: underline;\">успешно</span></p><p>проведенных операций</p></body></html>"))
+        self.label_war_2.setText(_translate("Form",
+                                            "<html><head/><body><p>Количество <span style=\" text-decoration: underline;\">не</span><span style=\" text-decoration: underline;\">успешно</span></p><p>проведенных операций</p></body></html>"))
